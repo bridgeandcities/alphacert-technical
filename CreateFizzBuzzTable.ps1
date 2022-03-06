@@ -22,8 +22,6 @@ END
 UPDATE [dbo].[FizzBuzzResults] SET N = 'FizzBuzz' WHERE ((N % 3 = 0) and (N % 5 = 0))
 UPDATE [dbo].[FizzBuzzResults] SET N = 'Fizz' WHERE (N % 3 = 0) and (N != 'FizzBuzz') and (N != 'Buzz')
 UPDATE [dbo].[FizzBuzzResults] SET N = 'Buzz' WHERE (N % 5 = 0) and (N != 'FizzBuzz') and (N != 'Fizz')
-
-SELECT * FROM [dbo].[FizzBuzzResults];
 "
 $dbConnectionString = 'Server=tcp:database1-server.database.windows.net,1433;Initial Catalog=database1-db;Persist Security Info=False;User ID=test;Password=Something1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
 
