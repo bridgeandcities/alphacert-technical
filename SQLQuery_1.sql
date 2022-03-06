@@ -17,5 +17,3 @@ UPDATE [dbo].[FizzBuzzResults] SET N = 'Fizz' WHERE (N % 3 = 0) and (N != 'FizzB
 UPDATE [dbo].[FizzBuzzResults] SET N = 'Buzz' WHERE (N % 5 = 0) and (N != 'FizzBuzz') and (N != 'Fizz')
 
 SELECT * FROM [dbo].[FizzBuzzResults];
-
---DROP TABLE FizzBuzzResults;
